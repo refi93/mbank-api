@@ -29,7 +29,8 @@
   },
   "homepage": "https://github.com/refi93/mbank-api#readme",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
     "eslint": "^5.9.0",
