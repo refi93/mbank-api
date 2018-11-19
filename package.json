@@ -1,0 +1,22 @@
+{
+  "name": "mbank-api",
+  "version": "1.0.0",
+  "description": "library for connecting to mbank through your internetbanking credentials",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/refi93/mbank-api.git"
+  },
+  "keywords": [
+    "mbank"
+  ],
+  "author": "refi93",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/refi93/mbank-api/issues"
+  },
+  "homepage": "https://github.com/refi93/mbank-api#readme"
+}
