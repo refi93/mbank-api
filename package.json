@@ -2,9 +2,18 @@
   "name": "mbank-api",
   "version": "1.0.0",
   "description": "library for connecting to mbank through your internetbanking credentials",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint src --max-warnings=0",
+    "prettier": "prettier-eslint --write \"{src}/**/*.{js,jsx,json,css}\"",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "{src}/**/*.{js,jsx,json,css}": [
+      "prettier-eslint --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -21,5 +30,15 @@
   "homepage": "https://github.com/refi93/mbank-api#readme",
   "dependencies": {
     "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-vacuumlabs": "^1.7.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.5",
+    "prettier": "^1.15.2",
+    "prettier-eslint-cli": "^4.7.1"
   }
 }
