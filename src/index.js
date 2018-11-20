@@ -17,7 +17,7 @@ class Mbank {
       Password: this.password
     })
 
-    if (result.status !== 200) {
+    if (!result.headers['set-cookie']) {
       return false
     }
 
