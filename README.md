@@ -10,7 +10,7 @@ const Mbank = require('mbank-api)
 const mbankSession = new Mbank('sk', 'johndoe', 'superstrongpwd')
 await mbankSession.login()
 
-console.log(mbankSession.getAccountByIban('myiban'))
+console.log(await mbankSession.getAccountByIban('myiban'))
 /*
 outputs something like this: 
 { cID: 'SK8483600556293256363563',
