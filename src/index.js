@@ -19,7 +19,7 @@ class Mbank {
 
     if (!result.headers['set-cookie']) {
       const error = new Error('login failed')
-      error.response = result
+      error.responseData = result.data
       throw error
     }
 
